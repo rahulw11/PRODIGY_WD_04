@@ -1,0 +1,121 @@
+body{
+    background: #22518f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#weather-container{
+background: rgba(255, 255, 255, 0.3);
+max-width: 400px;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.1) ;
+text-align: center;
+}
+#weather-container .title{
+    display: flex;
+    justify-content: center;
+}
+#weather-container h2 img{
+    height: 3rem;
+    width: 3rem;
+}
+h2 ,label ,p{
+    color: #fff;
+    margin: 8px 0;
+}
+input{
+    width: calc(100% - 16px);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+    outline: none;
+    text-transform: capitalize;
+}
+button{
+    background: #1e4e8b;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+}
+button:hover{
+    background: #385d8d;
+    letter-spacing: .03rem;
+}
+#temp-div p{
+    font-size: 60px;
+    margin-top: 20px;
+}
+#weather-info{
+    margin-top: 1rem;
+    font-size: 25px;
+}
+#weather-icon{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+#hourly-forecast{
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(2, 2, 2, 0.2) rgba(0, 0, 0, 0);
+}
+.hourly-item{
+    flex: 0 0 auto;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+.hourly-item img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+#hourly-heading{
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+
+/* media query */
+@media(max-width:768px){
+    html{
+        font-size: 100%;
+    }
+}
+
+@media(max-width:400px){
+
+    #weather-container{
+        width: 100%;
+    }
+@media(max-width:350px){
+    html{
+        width: 100%;
+    }
+}
+
+}
